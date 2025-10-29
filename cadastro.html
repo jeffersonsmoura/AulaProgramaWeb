@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONG Anjos da Rua | Cadastro de Voluntário</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: rgb(243, 243, 240);
+      color: rgb(13, 13, 13);
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #0044bd;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 15px;
+    }
+
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 500px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, select, textarea, button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #0044bd;
+      color: white;
+      cursor: pointer;
+      border: none;
+      margin-top: 15px;
+    }
+
+    button:hover {
+      background-color: #003399;
+    }
+
+    footer {
+      margin-top: 30px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>ONG Anjos da Rua: Sua Ajuda Transforma Vidas!</h1>
+    <p>Você dá um passo de se tornar parte do nosso time de protetor de Animais!</p>
+    <p>Seja voluntário da ONG Anjos da Rua — seja ao adotar um cachorro ou um gatinho, dedicando seu tempo como voluntário ou contribuindo como doador/patrocinador — seu apoio é essencial para resgatarmos e reabilitarmos mais vidas.</p>
+    <p>Por favor, preencha o formulário abaixo para que possamos entender melhor como você deseja fazer a diferença.</p>
+    <p><strong>Atenção:</strong> Todos os seus dados são utilizados apenas para a comunicação da ONG Anjos da Rua.</p>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projeto.html">Projeto</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form action="https://formsubmit.co/andrealexandre223@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Novo cadastro - ONG Frajola">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://andrealexandre.github.io/Projeto-Front-end-para-Web/obrigado.html">
+
+      <label for="nome">Nome completo:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="telefone">Número de contato:</label>
+      <input type="tel" id="telefone" name="telefone" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="ajuda">Como deseja ajudar?</label>
+      <select id="ajuda" name="ajuda" required>
+        <option value="">Selecione...</option>
+        <option value="Adoção">Adoção</option>
+        <option value="Voluntário">Voluntariado</option>
+        <option value="Doador">Doador</option>
+        <option value="Patrocinio">Patrocínio</option>
+      </select>
+
+      <label for="mensagem">Mensagem (opcional):</label>
+      <textarea id="mensagem" name="mensagem" rows="4" cols="40" placeholder="Conte-nos mais sobre você ou sua ajuda..."></textarea>
+
+      <button type="submit">Enviar Cadastro</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ONG Anjos da Rua - Obrigado por apoiar nossa causa 🧡</p>
+  </footer>
+</body>
+</html>

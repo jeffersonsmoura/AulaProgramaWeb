@@ -1,43 +1,236 @@
-<!DOCTYPE html> 
-<html lang="pt">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Ong - Anjos da Rua | Cruzeiro do Sul </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONG ANJOS DA RUA | Resgate e Adoção de Animais</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f9fafb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #3b82f6;
+      color: white;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #dbeafe;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      background-color: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      color: #1d4ed8;
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+    }
+
+    ul {
+      margin-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .cards-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      background-color: #fefefe;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1rem;
+    }
+
+    .card-content h3 {
+      margin-bottom: 0.5rem;
+      color: #1e40af;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    footer {
+      background-color: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    footer span {
+      color: #facc15;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      section {
+        padding: 1rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-        <h1> Ong Anjos da Rua </h1> 
-        <nav>
-            <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                    <li><a href="/projeto.html">Projeto</a></li>
-                    <li><a href="/cadastro.html">Cadastro</a></li>
-            </ul>
-        </nav>  
-     </header>
-    <main>
-        <section>
-            <h2> Quem Somos </h2>
-            <p>Fundada em 2025, a Anjos da Rua é uma organização sem fins lucrativos que atua na proteção animal, com foco em resgates, reabilitação, adoção e educação ambiental. Nossa missão é reduzir o número de animais abandonados por meio de ações de acolhimento, castração e conscientização da comunidade. Trabalhamos com voluntários dedicados e contamos com o apoio de parceiros e doações para manter nossas atividades.</p>
-            <img src="/Imagens/468e6d38-b3cf-46d1-ae28-ebb433903c9e.jpg" alt="Voluntários em Ação">
-        </section>
-        <section>
-            <h2>Missão Ong Anjos da Rua</h2>
-            <p>Nossa missão é construir uma comunidade mais solidária e consciente, onde humanos e animais convivam com compaixão e respeito.
-Somos movidos pelo amor, pela esperança e pela vontade de fazer a diferença — um resgate de cada vez.</p>
-        </section>
-        <section>
-            <h2> Contato Ong Anjos da Rua</h2>
-            <address>
-                <p>Endereço: Rua Esmeralda, 945 - Bairro Centro - Iperó/SP </p>
-                <P>Tel:(15) 58709894 Cel:(11) 954533396</P>
-                <p>onganjosdarua@gmail.com</p>
-            </address>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Anjos da Rua </p>
-    </footer>
+  <header>
+    <h1>ONG ANJOS DA RUA 🐾</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projeto.html">Projeto</a></li>
+        <li><a href="cadastro.html">Cadastros</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Animais Disponíveis para Adoção 🐶🐱</h2>
+      <p>Conheça alguns dos nossos amigos que estão em busca de um lar cheio de amor e carinho.</p>
+
+      <div class="cards-container">
+        <!-- Card 1 -->
+        <div class="card">
+          <img src="/Imagens/Cachorro Thor.webp" alt="Cachorro Thor">
+          <div class="card-content">
+            <h3>Thor</h3>
+            <p>Brincalhão e cheio de energia, Thor adora correr e receber carinho. Ideal para famílias ativas.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="/Imagens/Gata Luna.jpg" alt="Gata Luna">
+          <div class="card-content">
+            <h3>Luna</h3>
+            <p>Calma e carinhosa, Luna é uma gatinha doce que adora cochilar perto do sol e receber cafuné.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <img src="/Imagens/Cachorro Max.jpg" alt="Cachorro Max">
+          <div class="card-content">
+            <h3>Max</h3>
+            <p>Amigável e companheiro, Max está pronto para ser o melhor amigo da sua família.</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+          <img src="/Imagens/Gata Mestiça.avif" alt="Gato Mestiça">
+          <div class="card-content">
+            <h3>Mestiça</h3>
+            <p>Esperta e curiosa Divertida que adora brincar com bolinhas de papel.</p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+          <img src="/Imagens/Gata Mimi.jpg" alt="Gata Mimi">
+          <div class="card-content">
+            <h3>Mimi</h3>
+            <p>Muito carinhosa e sociável, Mimi se adapta facilmente e adora companhia.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Como Ajudar ❤️</h2>
+      <p>Você pode fazer parte da nossa missão de salvar vidas. Torne-se voluntário, adotante, doador ou patrocinador.</p>
+      <nav>
+        <ul>
+          <li><a href="cadastro.html">Cadastre-se</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section>
+      <h2>Contato ONG Anjos da Rua 📞</h2>
+      <address>
+        <p>Endereço: Rua Esmeralda, 945 - Bairro Centro - Iperó/SP</p>
+        <p>Tel: (15) 5870-9894 | Cel: (11) 95595-0112</p>
+        <p>Email: onganjosdarua@gmail.com</p>
+      </address>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 ONG ANJOS DA RUA — Obrigado por apoiar nossa causa <span>💛</span></p>
+  </footer>
 </body>
 </html>
